@@ -54,13 +54,12 @@ p { margin: 0; }
   border-bottom: 1px solid var(--rule);
 }
 .site-header .wrap { display: flex; align-items: center; gap: 32px; padding-block: 18px; }
-.brand { display: inline-flex; align-items: center; gap: 14px; text-decoration: none; flex-shrink: 0; }
-.brand svg { width: 112px; height: 44px; flex-shrink: 0; }
-.brand-text { display: flex; flex-direction: column; line-height: 1; font-family: "Montserrat", "Segoe UI", system-ui, sans-serif; padding-top: 2px; }
-.brand-name { font-weight: 700; letter-spacing: 0.07em; font-size: 1.25rem; color: #1e3a2c; white-space: nowrap; }
-.brand-sub { display: flex; align-items: center; gap: 12px; margin-top: 7px; font-size: 0.82rem; letter-spacing: 0.42em; font-weight: 600; color: #4f6d58; }
-.brand-sub::before, .brand-sub::after { content: ""; height: 1.5px; flex: 1; background: #93a99a; min-width: 22px; }
-.brand-sub::after { margin-left: -0.42em; }
+.brand { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; flex-shrink: 0; }
+.brand svg { width: 64px; height: 30px; }
+.brand-text { display: flex; flex-direction: column; line-height: 1; }
+.brand-name { font-weight: 800; letter-spacing: 0.14em; font-size: 1.05rem; color: var(--forest-ink); }
+.brand-sub { display: flex; align-items: center; gap: 6px; margin-top: 5px; font-size: 0.68rem; letter-spacing: 0.42em; font-weight: 600; color: var(--forest); }
+.brand-sub::before, .brand-sub::after { content: ""; height: 1px; flex: 1; background: var(--forest); min-width: 14px; }
 
 .nav { display: flex; align-items: center; gap: 30px; margin-left: auto; }
 .nav a { text-decoration: none; font-size: 0.95rem; font-weight: 500; color: var(--ink); padding-block: 6px; border-bottom: 2px solid transparent; }
@@ -254,9 +253,8 @@ form.contact-form { display: grid; gap: 18px; }
   .footer-contact { flex-direction: column; }
   .footer-contact span, .footer-contact span:first-child { border-left: 0; padding: 0; }
   .hero-actions { gap: 20px; }
-  .brand svg { width: 80px; height: 31px; }
-  .brand-name { font-size: 1rem; }
-  .brand-sub { font-size: 0.66rem; margin-top: 5px; }
+  .brand svg { width: 52px; }
+  .brand-name { font-size: 0.95rem; }
 }
 
 /* Two-column reasons grid (For Brands growth section) */
@@ -271,16 +269,3 @@ form.contact-form { display: grid; gap: 18px; }
 @media (max-width: 1020px) { .steps-6 li:nth-child(4) { padding-left: 0; } }
 @media (max-width: 1020px) { .steps-6 { grid-template-columns: 1fr 1fr; } .steps-6 li { padding: 0 22px 0 0; border-left: 0; } }
 @media (max-width: 640px) { .steps-6 { grid-template-columns: 1fr; } }
-
-/* Contact page without form */
-.contact-wrap { display: grid; gap: 48px; }
-.email-panel { display: flex; flex-wrap: wrap; align-items: center; gap: 24px 28px; background: var(--paper); border: 1px solid var(--rule); border-radius: 6px; padding: 36px; }
-.email-panel-text { flex: 1 1 320px; min-width: 0; display: grid; gap: 8px; }
-.email-panel h2 { font-size: clamp(1.5rem, 2.6vw, 1.9rem); }
-.email-panel p { color: var(--muted); }
-.email-panel .email-address { font-size: 1.25rem; font-weight: 700; overflow-wrap: anywhere; }
-.email-panel .email-address a { color: var(--forest); text-decoration: none; }
-.email-panel .email-address a:hover { text-decoration: underline; }
-.contact-wrap .contact-card { grid-template-columns: repeat(3, 1fr); border-top: 0; column-gap: 32px; }
-.contact-wrap .contact-item { border-bottom: 0; border-top: 1px solid var(--rule); }
-@media (max-width: 860px) { .contact-wrap .contact-card { grid-template-columns: 1fr; } .email-panel { padding: 24px; } }
